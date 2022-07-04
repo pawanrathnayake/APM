@@ -1,0 +1,26 @@
+@import 'colors';
+@import 'layout';
+@import 'mixins';
+@import 'typo';
+
+body {
+  height: 100%;
+  font-family: 'Source Serif Pro', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.fa-solid {
+  margin-right: 5px;
+
+}
+
+.fa-active::before, .fa-mortar-board:before {
+  border: $icon-border solid 2px;
+  border-radius: 50%;
+  content: "\f19d";
+  padding: 15px;
+}
