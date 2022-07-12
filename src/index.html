@@ -33,53 +33,300 @@
             <li><a href="">Coloction Academy</a></li>
             <li><a href=""></a></li>
             <li><a href="">Login</a></li>
-            <li><a  class="active-button" href="">Menu<i class="fa-solid fa-indent fa-2xl"></i></a></li>
+            <li><a  class="active-button" href="">Menu<i class="fa-solid fa-bars-sort fa-2xl"></i></a></li>
         </ul>
     </div>
 </nav>
-<!-- A grid system. -->
+<!-- track and trace grid -->
 <div class="grid01">
-    <!-- <div class="grid__col01"><img src="./assets/img/Capture.PNG"></div> -->
-    <div class="grid__col02">
+    <div class="grid01__col01"><img src="./assets/img/yello.png" alt=""></div>
+    <div class="grid01__col02">
         <h1>Pier 400 Los Angeles</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
     </div>
-    <div class="grid__col03">s</div>
+    <div class="grid01__col03">
+<!-- A tabbed section. -->
+        <div class="section-slk">
+            <h4 class="grid01__h4">Track and Trace</h4>
+            <div class="container p-0">
+              <div class="tabs-wrapper">
+                <nav class="tabs">
+                  <a href="#" class="tab after-slide is-active" data-target="1">Booking Number</a>
+                  <a href="#" class="tab after-slide" data-target="2">Equipment Number</a>
+                </nav>
+              </div>
+          
+              <div class="row p-0">
+                <div class="active-content">
+                  <div class="text active-text">
+                    <input class = "grid01__input" placeholder = "e.g. 012345678900"type="text">
+                    <button class="grid01__button">Track <img src="./assets/img/symbol_arrow_white.png" alt="arrow-white"></button>
+                  </div>
+                  <div class="text">
+                    2 nd tab
+                  </div>
+                </div>
+              </div>
+            </div>
+            </section>
+          </div>
+
+          </div>
+          <style>
+            .tab {
+  --animation-time: 200ms;
+  position: relative;
+}
+
+.tab::after {
+  content: "";
+  display: block;
+  bottom: 0;
+  left: 0;
+  width: 176px;
+  height: var(--underline-size, 2px);
+  position: absolute;
+  background-color: var(--underline-color, currentColor);
+  transition: transform ease var(--animation-time, 200ms),
+    opacity ease 0ms 200ms;
+  opacity: 0;
+}
+.tab.after-slide::after {
+  transform: translateX(100%);
+}
+.tab.before-slide::after {
+  transform: translateX(-100%);
+}
+
+.section-slk .tab:active ~ .tab::after {
+  transform: translateX(1%);
+}
+
+.tabs-wrapper:not(:hover) .tab:not(.is-active)::after {
+  transform: translateY(100%);
+}
+
+.tabs:hover .tab:active::after,
+.tabs-wrapper:hover .tabs:hover .tab:active::after {
+  transition-delay: 0ms, 0ms;
+}
+
+.tab.is-active::after {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+/* Just for styling */
+.tabs-wrapper {
+  width: 100%;
+  border-bottom: 1px solid #5d5d5d !important;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab {
+  --underline-color: #004165;
+  --underline-size: 2px;
+  color: inherit;
+  padding: 20px;
+  text-decoration: none;
+  white-space: nowrap;
+  width: inherit;
+}
+
+.tab:first-child {
+  padding-left: 0 !important;
+}
+.tab:last-child {
+  padding-right: 0 !important;
+}
+.active-content .text {
+  display: none;
+}
+.active-content .text.active-text {
+  display: block;
+}
+
+.section-slk .tab {
+  color: #5d5d5d !important;
+}
+.section-slk .tabs-wrapper .tabs .tab.is-active {
+  color: #004165 !important;
+  font-weight: bold;
+}
+
+@media (max-width: 1000px) {
+  .tabs-wrapper {
+    overflow-x: scroll;
+  }
+  ::-webkit-scrollbar {
+    background: transparent;
+    display: none; /* Optional: just make scrollbar invisible */
+  }
+  /* Optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+}
+
+          </style>
+    </div>
 </div>
+<!--Key service gird-->
 <div class="grid02">
     <div class="col01"></div>
     <div class="col02"></div>
     <div class="col03"></div>
     <div class="col04"></div>
 </div>
+<!--gird faq-->
 <div class="grid03">
     <div class="col01"></div>
     <div class="col02"></div>
 </div>
+<!--grid table-->
 <div class="grid04">
-    <div class="col01"></div>
-    <div class="col02"></div>
+    <div class="grid04__col01">
+        <h2>Vessel Schedule</h2>
+    </div>
+    <div class="grid04__col02">
+        <table>
+            <tr>
+                <th>Vessel Name</th>
+                <th>Arrival</th>
+                <th>Departure</th>
+                <th>Voyage</th>
+            </tr>
+            <tr>
+                <td>MSC VEGA</td>
+                <td>17 Jan 2018 05:00</td>
+                <td>22 Jan 2018 04:00</td>
+                <td>751N / 803S</td>
+            </tr>
+            <tr>
+                <td>SEALAND GUAYAQUIL</td>
+                <td>17 Jan 2018 05:00</td>
+                <td>18 Jan 2018 09:00</td>
+                <td>1802 / 1803</td>
+            </tr>
+            <tr>
+                <td>HYUNDAI BUSAN</td>
+                <td>22 Jan 2018 17:00</td>
+                <td>25 Jan 2018 18:00</td>
+                <td>105E / 105W</td>
+            </tr>
+            <tr>
+                <td>105E / 105W</td>
+                <td>24 Jan 2018 05:00</td>
+                <td>27 Jan 2018 04:00</td>
+                <td>752N / 804S</td>
+            </tr>
+        </table>
+        <button class="grid04__col04-button">View all vessel schedule<img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+    </div>
 </div>
+<!--gird card-->
 <div class="grid05">
-    <div class="col01"></div>
-    <div class="col02"></div>
-    <div class="col03"></div>
+    <div class="grid05__col01">News and Views</div>
+    <div class="grid05__col02">
+        <div class="grid05__card">
+            <img src="./assets/img/card-image.png" alt="employee">
+            <h4>APM Terminals Pecém reports record volumes</h4>
+            <p>The new terminal is expected to be built on APM Terminals Poti land and infrastructure and will entail the ...</p>
+            <button>View more news <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+        </div>
+    </div>
+    <div class="grid05__col03">
+        <div class="grid05__card">
+            <img src="./assets/img/card-image.png" alt="employee">
+            <h4>APM Terminals Pecém reports record volumes</h4>
+            <p>The new terminal is expected to be built on APM Terminals Poti land and infrastructure and will entail the ...</p>
+        </div>
+    </div>
 </div>
+<!--grid shipment-->
 <div class="grid06">
-    <div class="col01"></div>
-    <div class="col02"></div>
+    <div class="grid06__col01">
+        <img src="./assets/img/dashboard.png" alt="dashboard">
+    </div>
+    <div class="grid06__col02">
+        <div class="grid06__card">
+            <div class="grid06__card-header">
+                Manage your shipment online
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam incididunt ut labore et dolore magna.
+            </p>
+            <button class="grid06__col02-button">Learn more <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+        </div>
+    </div>
 </div>
+<!--grid team-->
 <div class="grid07">
-    <div class="col01"></div>
-    <div class="col02"></div>
-    <div class="col03"></div>
+    <div class="col01">dcdcd</div>
+    <div class="col02">dcdcdc</div>
+    <div class="col03">scsc</div>
 </div>
+<!--grid info-->
 <div class="grid08">
-    <div class="col01"></div>
-    <div class="col02"></div>
+    <div class="grid08__col01">
+        <div class="grid08__card">
+            <img src="./assets/img/title.png" alt="">
+            <span>Contact us</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Contact us <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+        </div>
+    </div>
+    <div class="grid08__col02">
+        <div class="grid08__card">
+            <img src="./assets/img/title.png" alt="">
+            <span>Careers</span>
+            <p>In every corner of the world and in every business area, you will live the same core values. Competing in the market place in an ethical way, you are a valuable and solid business partner.</p>
+            <button>Learn more <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+        </div>
+    </div>
 </div>
-<footer>
-    
+<!--footer-->
+<footer class="footer">
+<div class="footer__col01">
+    <h4 class="footer__heading">Pier 400 Los Angeles</h4>
+    <ul>
+        <li>APM terminals Pier 400</li>
+        <li>2500 Navy Way</li>
+        <li>Temrinal Island, CA 90731</li>
+        <li>USA</li>
+    </ul>
+    <span><a href="">Directions</a></span> 
+</div>
+<div class="footer__col02">
+    <h4 class="footer__heading">Quick links</h4>
+    <ul>
+        <li>Daily Temrminal Information</li>
+        <li>Bussiness & Payment Center</li>
+        <li>FAQs</li>
+        <li>EIR Gate Ticket Reprint</li>
+    </ul>
+</div>
+<div class="footer__col03">
+    <!-- <div class="search">
+        <input type="text" class="search__input" aria-label="search" placeholder="enter your search">
+        <img src="./assets/img/symbol_arrow_orange.png" class="search__submit" aria-label="submit search">
+      </div> -->
+    <h4 class="footer__heading">Sign up for our newsletters</h4>
+    <div class="footer__input">
+        <input class="footer__mail" placeholder="Email" type="email">
+        <img src="./assets/img/symbol_arrow_orange.png" alt="arrow-symbol" class="footer__img">
+    </div>
+    <i class="fa-brands fa-google-plus-g"></i>
+    <i class="fa-brands fa-linkedin-in"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-facebook-f"></i>
+    <small>APM Terminals © Copyright 2018 Legal Notice  |  Privacy</small>
+</div>
 </footer>
+<!-- <script src="./assets/js/index.js"></script> -->
 </body>
 </html>
