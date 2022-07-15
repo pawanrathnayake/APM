@@ -105,7 +105,7 @@
     &__h4 {
       width: 312px;
       height: 40px;
-      margin: 0 0 13px;
+      margin: 37px 0 13px;
       font-family: TradeGothic;
       font-size: 32px;
       font-weight: 300;
@@ -124,7 +124,7 @@
       border-radius: 30px;
       box-shadow: 0 2px 19px 0 rgba(189, 189, 189, 0.34);
       background-color: #ff6319;
-      margin: 0 9.1px 0 0;
+      margin: 0 9.1px 40.7px 0;
       font-family: ITCFranklinGothicStd-Med;
       font-size: 18px;
       font-weight: normal;
@@ -144,26 +144,280 @@
       width: -webkit-fill-available;
       height: -webkit-fill-available;
     }
+    &__pra {
+      padding-bottom: 106px;
+      position: relative;
+    }
+
+    &__pra::after {
+      content: url('//src/assets/img/symbol_arrow_orange.png');
+      left: 10px;
+      position: absolute;
+
+    }
+
+    &__arrow {
+      transform: rotate(90deg);
+      bottom: 0;
+    }
 
     &__col02 {
         padding: 171px 158px 0px 62px;
     }
 
     &__col03 {
-      padding: 37px 40px 0;
+      padding: 3px 40px 0;
   }
 
+  }
+
+  .section-slk {
+    border-bottom: solid  #979797 2px;
   }
 
   .grid02 {
     display: flex;
     flex-direction: row;
+    padding: 120px 128px 10px 141px;
+
+    &__h4 {
+      width: 415px;
+      height: 127px;
+      margin: 74px 0 2px 41px;
+      font-family: TradeGothic;
+      font-size: 60px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.07;
+      letter-spacing: normal;
+      text-align: left;
+      color: #393939;
+      position: relative;
+      z-index: 3;
+    }
+
+    &__h4::before {
+      content: url('../assets/img/title.png');
+      position: absolute;
+      left: -95px;
+      top: -100px;     
+    }
+
+    &__overlay {
+      position: relative;
+      z-index: 2;
+      width: 250px;
+      top: -205px;
+      opacity: 0.6;
+    }
+
+    &__header {
+      width: 165px;
+      height: 32px;
+      margin: 0 75px 30px 0;
+      font-family: TradeGothic;
+      font-size: 28px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.14;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2f2f2f;
+    }
+
+    &__img {
+      width: 100px;
+      height: 100px;
+      margin: 30px 140px 28px 0;
+      padding: 27px 0 23px;
+    }
+
+    &__p {
+      width: 240px;
+      height: 84px;
+      margin: 28px 0 0;
+      font-family: TradeGothic;
+      font-size: 19px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.47;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2f2f2f;
+      padding: 0 20px 67px 0;
+    }
+
+    &__btn {
+      width: 282px;
+      height: 50px;
+      padding: 8px 24px 11px 29px;
+      border-radius: 30px;
+      box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
+      background-color: #fff;
+      border: transparent;
+      font-family: ITCFranklinGothicStd;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ff6319;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      justify-items: center;
+      cursor: pointer;
+    }
+
   }
 
   .grid03 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
+    padding: 104px 119px 10px 345px;
+
+    &__h4 {
+      width: 256px;
+      height: 92px;
+      font-family: TradeGothic;
+      font-size: 40px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.15;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2f2f2f;
+      padding-top: 80px;
+      position: relative;
+    }
+
+    &__h4::before {
+      content: url('../assets/img/title.png');
+      position: absolute;
+      left: -95px;
+      top: -100px;     
+    }
+
+    &__paragraph {
+      width: 268px;
+      height: 84px;
+      font-family: TradeGothic;
+      font-size: 19px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.47;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2f2f2f;
+      padding-bottom: 32px;
+    }
+
+    &__button {
+      width: 268px;
+      height: 50px;
+      padding: 8px 24px 11px 29px;
+      border-radius: 30px;
+      box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
+      background-color: #fff;
+      border: transparent;
+      font-family: ITCFranklinGothicStd;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ff6319;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      justify-items: center;
+      cursor: pointer;
+    }
+
+    &__header {
+      padding: 0 0 30px 0;
+      width: 359px;
+      height: 46px;
+      font-family: TradeGothic;
+      font-size: 40px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.15;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2f2f2f;
+      position: relative;
+    }
+
+    &__header::before {
+      content: url('../assets/img/title.png');
+      position: absolute;
+      left: -95px;
+      top: -100px;     
+    }
+
+    &__button {
+      width: 242px;
+      height: 50px;
+      padding: 8px 24px 11px 29px;
+      border-radius: 30px;
+      box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
+      background-color: #fff;
+      border: transparent;
+      font-family: ITCFranklinGothicStd;
+      font-size: 18px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #ff6319;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      justify-items: center;
+      cursor: pointer;
+    }
+
+    &__pa {
+      padding: 12px 119px 11px 39px;
+      background-color: #004165;
+      font-family: ITCFranklinGothicStd-Med;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.31;
+      letter-spacing: normal;
+      text-align: left;
+      color: #fff;
+
+    }
+
+    &__details {
+      padding: 35px 45px 10px 40px;
+      font-family: TradeGothic;
+      font-size: 19px;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.42;
+      letter-spacing: normal;
+      text-align: left;
+      color: #2f2f2f;
+    }
 
   }
 
@@ -171,7 +425,7 @@
     display: grid;
 
 
-    &__col01 h2{
+    &__header{
       width: 504px;
       height: 127px;
       margin: 74px 0 2px 263px;
@@ -184,6 +438,22 @@
       letter-spacing: normal;
       text-align: left;
       color: #393939;
+      position: relative;
+    }
+
+    &__header::before {
+      content: url('../assets/img/title.png');
+      position: absolute;
+      left: -95px;
+      top: -100px;     
+    }
+
+    &__overlay {
+      position: relative;
+      z-index: 2;
+      width: 250px;
+      top: -160px;
+      opacity: 0.6;
     }
 
     &__col02 table {
@@ -237,8 +507,9 @@
     grid-template-rows: auto;
     padding: 0 257px 0 141px;
     grid-gap: 53px;
+    padding-top: 121px;
 
-    &__col01 {
+    &__header {
       width: 278px;
       height: 127px;
       margin: 74px 0 2px 41px;
@@ -251,6 +522,22 @@
       letter-spacing: normal;
       text-align: left;
       color: #393939;
+      position: relative;
+    }
+
+    &__header::before {
+      content: url('../assets/img/title.png');
+      position: absolute;
+      left: -95px;
+      top: -100px;     
+    }
+
+    &__overlay {
+      position: relative;
+      z-index: 2;
+      width: 250px;
+      top: -205px;
+      opacity: 0.6;
     }
 
     // &__card {
@@ -320,6 +607,21 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
 
+    &__card-header::before {
+      content: url('../assets/img/title.png');
+      position: absolute;
+      left: -95px;
+      top: -100px;     
+    }
+
+    &__overlay {
+      position: relative;
+      z-index: 2;
+      width: 250px;
+      top: -205px;
+      opacity: 0.6;
+    }
+
     &__col01 img{
       width: 600px;
       height: 440px;
@@ -344,6 +646,7 @@
       letter-spacing: normal;
       text-align: left;
       color: #393939;
+      position: relative;
     }
 
     &__card p{
@@ -389,35 +692,32 @@
 
   }
 
-  // .grid07 {
-  //   display: grid;
-  //   grid-template-columns: repeat(2, 1fr);
-  //   grid-template-rows: 680px;
-
-  //   height: 400px;
-  //   margin: 85px 0 87px;
-  //   transform: rotate(-5deg);
-  //   opacity: 0.03;
-  //   background-color: #004165;
-
-  //   &__col01 {
-
-
-  //   }
-
-  //   &__col01 {
-
-
-  //   }
-
-  //   &__col01 {
-
-
-  //   }
+  .grid07 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 680px;
+    padding-bottom: 139px;
 
 
 
-  // }
+    // &__col01 {
+
+
+    // }
+
+    // &__col01 {
+
+
+    // }
+
+    // &__col01 {
+
+
+    // }
+
+
+
+  }
 
   .grid08 {
     display: grid;
@@ -454,7 +754,16 @@
       letter-spacing: normal;
       text-align: left;
       color: #2f2f2f;
-    };
+      position: relative;
+    }
+
+    &__card span::before {
+      content: url('../assets/img/title.png');
+      position: absolute;
+      left: -80px;
+      bottom: -10px;
+      width: 100px;
+    }
 
     &__card button {
       width: 250px;

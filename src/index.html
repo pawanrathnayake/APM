@@ -42,7 +42,8 @@
     <div class="grid01__col01"><img src="./assets/img/yello.png" alt=""></div>
     <div class="grid01__col02">
         <h1>Pier 400 Los Angeles</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p class="grid01__pra">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <img class="grid01__arrow" src="./assets/img/symbol_arrow_orange.png" alt="">
     </div>
     <div class="grid01__col03">
 <!-- A tabbed section. -->
@@ -70,6 +71,32 @@
             </div>
             </section>
           </div>
+
+          <!-- A tabbed section. -->
+        <div class="section-slk">
+          <h4 class="grid01__h4">Import Availability</h4>
+          <div class="container p-0">
+            <div class="tabs-wrapper">
+              <nav class="tabs">
+                <a href="#" class="tab after-slide is-active" data-target="1">Container Number</a>
+                <a href="#" class="tab after-slide" data-target="2">BOL number</a>
+              </nav>
+            </div>
+        
+            <div class="row p-0">
+              <div class="active-content">
+                <div class="text active-text">
+                  <input class = "grid01__input" placeholder = "e.g. 012345678900"type="text">
+                  <button class="grid01__button">Track <img src="./assets/img/symbol_arrow_white.png" alt="arrow-white"></button>
+                </div>
+                <div class="text">
+                  2 nd tab
+                </div>
+              </div>
+            </div>
+          </div>
+          </section>
+        </div>
 
           </div>
           <style>
@@ -177,20 +204,79 @@
 </div>
 <!--Key service gird-->
 <div class="grid02">
-    <div class="col01"></div>
-    <div class="col02"></div>
-    <div class="col03"></div>
-    <div class="col04"></div>
+    <div class="grid02__col01">
+      <h4 class="grid02__h4">Key services</h4>
+      <img class="grid02__overlay" src="./assets/img/abstract_orange.png" alt="">
+    </div>
+    <div class="grid02__col02">
+      <div class="grid02__header">Inland service</div>
+      <img class="grid02__img" src="./assets/img/Icon_terminal.png" alt="">
+      <p class="grid02__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+      <button class="grid02__btn">Learn more <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+    </div>
+    <div class="col03">
+      <div class="grid02__header">Crane services</div>
+      <img class="grid02__img" src="./assets/img/Icon_terminal.png" alt="">
+      <p class="grid02__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+    </div>
+    <div class="col04">
+      <div class="grid02__header">Weighing Services</div>
+      <img class="grid02__img"src="./assets/img/Icon_terminal.png" alt="">
+      <p class="grid02__p">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+    </div>
 </div>
 <!--gird faq-->
 <div class="grid03">
-    <div class="col01"></div>
-    <div class="col02"></div>
+    <div class="grid03__col01">
+      <div class="grid03__h4">APM Terminals FAQ</div>
+      <img class="grid03__img" src="./assets/img/Icon_terminal.png" alt="">
+      <p class="grid03__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+      <button class="grid03__button">See FAQs <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+    </div>
+    <div class="grid03__col02">
+      <div class="grid03__header">Hours of operation</div>
+     <!---->
+     <div class="section-slk">
+      <div class="grid03__pa">Monday, January 29th – gate closed both 1st and 2nd shift for the MLK Day Holiday</div>
+      <div class="container p-0">
+        <div class="tabs-wrapper">
+          <nav class="tabs">
+            <a href="#" class="tab after-slide is-active" data-target="1">Monday - Thursday</a>
+            <a href="#" class="tab after-slide" data-target="2">Friday</a>
+            <a href="#" class="tab after-slide" data-target="2">Saturday - Sunday</a>
+          </nav>
+        </div>
+    
+        <div class="row p-0">
+          <div class="active-content">
+            <div class="text active-text">
+              <p class="grid03__details">1st Shift Full Service Gate 07:00-17:00
+                (Import delivery ends at 16:30)
+              </p>
+              <p class="grid03__details">2nd Shift Full Service Gate 17:00-02:30
+                (Import grounded delivery ends at 01:30)
+              </p>
+            </div>
+            <div class="text">
+              2 nd tab
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+    </div>
+
+      <!---->
+      <button class="grid03__button">Learn more <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+    </div>
 </div>
 <!--grid table-->
 <div class="grid04">
     <div class="grid04__col01">
-        <h2>Vessel Schedule</h2>
+        <div class="grid04__header">
+          Vessel Schedule
+          <img class="grid04__overlay" src="./assets/img/abstract_orange.png" alt="">
+        </div> 
     </div>
     <div class="grid04__col02">
         <table>
@@ -230,7 +316,12 @@
 </div>
 <!--gird card-->
 <div class="grid05">
-    <div class="grid05__col01">News and Views</div>
+    <div class="grid05__col01">
+      <div class="grid05__header">
+        News and Views
+        <img class = "grid05__overlay"src="./assets/img/abstract_orange.png" alt="">
+      </div>
+    </div>
     <div class="grid05__col02">
         <div class="grid05__card">
             <img src="./assets/img/card-image.png" alt="employee">
@@ -256,6 +347,7 @@
         <div class="grid06__card">
             <div class="grid06__card-header">
                 Manage your shipment online
+                <img class = "grid05__overlay"src="./assets/img/abstract_orange.png" alt="">
             </div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam incididunt ut labore et dolore magna.
@@ -274,7 +366,6 @@
 <div class="grid08">
     <div class="grid08__col01">
         <div class="grid08__card">
-            <img src="./assets/img/title.png" alt="">
             <span>Contact us</span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <button>Contact us <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
@@ -282,7 +373,6 @@
     </div>
     <div class="grid08__col02">
         <div class="grid08__card">
-            <img src="./assets/img/title.png" alt="">
             <span>Careers</span>
             <p>In every corner of the world and in every business area, you will live the same core values. Competing in the market place in an ethical way, you are a valuable and solid business partner.</p>
             <button>Learn more <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
