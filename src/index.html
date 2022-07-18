@@ -14,26 +14,16 @@
 <!-- The navigation bar. -->
 <nav class="navbar">
     <div class="brand-title">
-       <img alt="logo" class="logo" src="./assets/img/2560px-APM_Terminals_logo.svg.png" />
+       <img alt="logo" class="navbar__logo" src="./assets/img/2560px-APM_Terminals_logo.svg.png" />
     </div>
-    <a class="toggle-button" href="">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </a>
-    <div class="navbar-links">
-    <!-- <div class="block">
-        <span><img src="./assets/img/Icon_terminal.png"></span>Find Location
-    </div> -->
-        
+    <div class="navbar__navbar-links">  
         <ul>
-            <!-- <li class="block"><a href=""><span><img src="./assets/img/Icon_terminal.png"></span>Find Location</a></li> -->
-            <li><a href="">EN</a></li>
-            <li><a href="">Coloction Academy</a></li>
-            <li><a href=""></a></li>
-            <li><a href="">Login</a></li>
-            <li><a  class="active-button" href="">Menu<i class="fa-solid fa-bars-sort fa-2xl"></i></a></li>
+            <li class="navbar__li"><a href="">Find Location</a></li>
+            <li class="navbar__li"><a href="">EN</a></li>
+            <li class="navbar__li"><a href="">Coloction Academy</a></li>
+            <li class="navbar__li"><a href=""></a></li>
+            <li class="navbar__li"><a href="">Login</a></li>
+            <li class="navbar__li"><a  class="navbar__active-button" href="">Menu<i class="fa-solid fa-bars-sort fa-2xl"></i></a></li>
         </ul>
     </div>
 </nav>
@@ -42,165 +32,44 @@
     <div class="grid01__col01"><img src="./assets/img/yello.png" alt=""></div>
     <div class="grid01__col02">
         <h1>Pier 400 Los Angeles</h1>
-        <p class="grid01__pra">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <p class="grid01__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
         <img class="grid01__arrow" src="./assets/img/symbol_arrow_orange.png" alt="">
     </div>
     <div class="grid01__col03">
-<!-- A tabbed section. -->
-        <div class="section-slk">
-            <h4 class="grid01__h4">Track and Trace</h4>
-            <div class="container p-0">
-              <div class="tabs-wrapper">
-                <nav class="tabs">
-                  <a href="#" class="tab after-slide is-active" data-target="1">Booking Number</a>
-                  <a href="#" class="tab after-slide" data-target="2">Equipment Number</a>
-                </nav>
-              </div>
-          
-              <div class="row p-0">
-                <div class="active-content">
-                  <div class="text active-text">
-                    <input class = "grid01__input" placeholder = "e.g. 012345678900"type="text">
-                    <button class="grid01__button">Track <img src="./assets/img/symbol_arrow_white.png" alt="arrow-white"></button>
-                  </div>
-                  <div class="text">
-                    2 nd tab
-                  </div>
-                </div>
-              </div>
-            </div>
-            </section>
-          </div>
-
-          <!-- A tabbed section. -->
-        <div class="section-slk">
-          <h4 class="grid01__h4">Import Availability</h4>
-          <div class="container p-0">
-            <div class="tabs-wrapper">
-              <nav class="tabs">
-                <a href="#" class="tab after-slide is-active" data-target="1">Container Number</a>
-                <a href="#" class="tab after-slide" data-target="2">BOL number</a>
-              </nav>
-            </div>
-        
-            <div class="row p-0">
-              <div class="active-content">
-                <div class="text active-text">
-                  <input class = "grid01__input" placeholder = "e.g. 012345678900"type="text">
-                  <button class="grid01__button">Track <img src="./assets/img/symbol_arrow_white.png" alt="arrow-white"></button>
-                </div>
-                <div class="text">
-                  2 nd tab
-                </div>
-              </div>
-            </div>
-          </div>
-          </section>
-        </div>
-
-          </div>
-          <style>
-            .tab {
-  --animation-time: 200ms;
-  position: relative;
-}
-
-.tab::after {
-  content: "";
-  display: block;
-  bottom: 0;
-  left: 0;
-  width: 176px;
-  height: var(--underline-size, 2px);
-  position: absolute;
-  background-color: var(--underline-color, currentColor);
-  transition: transform ease var(--animation-time, 200ms),
-    opacity ease 0ms 200ms;
-  opacity: 0;
-}
-.tab.after-slide::after {
-  transform: translateX(100%);
-}
-.tab.before-slide::after {
-  transform: translateX(-100%);
-}
-
-.section-slk .tab:active ~ .tab::after {
-  transform: translateX(1%);
-}
-
-.tabs-wrapper:not(:hover) .tab:not(.is-active)::after {
-  transform: translateY(100%);
-}
-
-.tabs:hover .tab:active::after,
-.tabs-wrapper:hover .tabs:hover .tab:active::after {
-  transition-delay: 0ms, 0ms;
-}
-
-.tab.is-active::after {
-  transform: translateX(0%);
-  opacity: 1;
-}
-
-/* Just for styling */
-.tabs-wrapper {
-  width: 100%;
-  border-bottom: 1px solid #5d5d5d !important;
-}
-
-.tabs {
-  display: flex;
-  justify-content: space-between;
-}
-
-.tab {
-  --underline-color: #004165;
-  --underline-size: 2px;
-  color: inherit;
-  padding: 20px;
-  text-decoration: none;
-  white-space: nowrap;
-  width: inherit;
-}
-
-.tab:first-child {
-  padding-left: 0 !important;
-}
-.tab:last-child {
-  padding-right: 0 !important;
-}
-.active-content .text {
-  display: none;
-}
-.active-content .text.active-text {
-  display: block;
-}
-
-.section-slk .tab {
-  color: #5d5d5d !important;
-}
-.section-slk .tabs-wrapper .tabs .tab.is-active {
-  color: #004165 !important;
-  font-weight: bold;
-}
-
-@media (max-width: 1000px) {
-  .tabs-wrapper {
-    overflow-x: scroll;
-  }
-  ::-webkit-scrollbar {
-    background: transparent;
-    display: none; /* Optional: just make scrollbar invisible */
-  }
-  /* Optional: show position indicator in red */
-  ::-webkit-scrollbar-thumb {
-    background: transparent;
-  }
-}
-
-          </style>
+<!-- A tabbed section. 01 -->
+  <div>
+    <h4 class="grid01__h4">Track and Trace</h4>
+    <ul class="tabs">
+      <li data-tab-target="#Booking" class="active tab">Booking Number</li>
+      <li data-tab-target="#Equipment" class="tab">Equipment Number</li>
+    </ul>
+    <div class="tab-content">
+      <div id="Booking" data-tab-content class="active">
+        <input class = "grid01__input" placeholder = "e.g. 012345678900"type="text">
+        <button class="grid01__button">Track <img src="./assets/img/symbol_arrow_white.png" alt="arrow-white"></button>
+      </div>
+      <div id="Equipment" data-tab-content>
+      </div>
     </div>
+  </div>
+<!-- A tabbed section.02 -->
+  <div>
+    <h4 class="grid01__h4">Import Availability</h4>
+    <ul class="tabs">
+      <li data-tab-target="#Container" class="active tab">Container Number</li>
+      <li data-tab-target="#BOL" class="tab">BOL number</li>
+    </ul>
+    <div class="tab-content">
+      <div id="Container" data-tab-content class="active">
+        <input class = "grid01__input" placeholder = "e.g. EISU1234567"type="text">
+        <small class="grid01__hint">50 Character limits</small>
+        <button class="grid01__button">Track <img src="./assets/img/symbol_arrow_white.png" alt="arrow-white"></button>
+      </div>
+      <div id="BOL" data-tab-content>
+      </div>
+    </div>
+  </div>       
+  </div>
 </div>
 <!--Key service gird-->
 <div class="grid02">
@@ -235,39 +104,29 @@
     </div>
     <div class="grid03__col02">
       <div class="grid03__header">Hours of operation</div>
-     <!---->
-     <div class="section-slk">
-      <div class="grid03__pa">Monday, January 29th – gate closed both 1st and 2nd shift for the MLK Day Holiday</div>
-      <div class="container p-0">
-        <div class="tabs-wrapper">
-          <nav class="tabs">
-            <a href="#" class="tab after-slide is-active" data-target="1">Monday - Thursday</a>
-            <a href="#" class="tab after-slide" data-target="2">Friday</a>
-            <a href="#" class="tab after-slide" data-target="2">Saturday - Sunday</a>
-          </nav>
+     <!--tab03-->
+    <div>
+      <div class="grid03__pa"><span><i class="fa-regular fa-exclamation"></i></span> January 29th – gate closed both 1st and 2nd shift for the MLK Day Holiday</div>
+      <ul class="tabs">
+        <li data-tab-target="#day01" class="active tab">Monday - Thursday</li>
+        <li data-tab-target="#day02" class="tab">Friday</li>
+        <li data-tab-target="#day03" class="tab">Saturday - Sunday</li>
+      </ul>
+      <div class="tab-content">
+        <div id="day01" data-tab-content class="active">
+          <p class="grid03__details">1st Shift Full Service Gate 07:00-17:00
+            (Import delivery ends at 16:30)
+          </p>
+          <p class="grid03__details">2nd Shift Full Service Gate 17:00-02:30
+            (Import grounded delivery ends at 01:30)
+          </p>
         </div>
-    
-        <div class="row p-0">
-          <div class="active-content">
-            <div class="text active-text">
-              <p class="grid03__details">1st Shift Full Service Gate 07:00-17:00
-                (Import delivery ends at 16:30)
-              </p>
-              <p class="grid03__details">2nd Shift Full Service Gate 17:00-02:30
-                (Import grounded delivery ends at 01:30)
-              </p>
-            </div>
-            <div class="text">
-              2 nd tab
-            </div>
-          </div>
+        <div id="day02" data-tab-content>
+        <div id="day03" data-tab-content></div>
         </div>
       </div>
-      </section>
     </div>
-
-      <!---->
-      <button class="grid03__button">Learn more <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+    <button class="grid03__button">Learn more <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
     </div>
 </div>
 <!--grid table-->
@@ -358,9 +217,42 @@
 </div>
 <!--grid team-->
 <div class="grid07">
-    <div class="col01">dcdcd</div>
-    <div class="col02">dcdcdc</div>
-    <div class="col03">scsc</div>
+    <div class="col01">
+      <!-- A tabbed section.02 -->
+    <div class="tab-content">
+      <div id="Container" data-tab-content class="profile">
+        <div class="col01">
+          <div class="profile__header">
+            Our Team
+          </div>
+          <div class="profile__name">
+            Joanna Smith
+          </div>
+          <p class="profile__des">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+        <div class="col02">
+          <div>
+            <img class="profile__img"src="./assets/img/profile.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="BOL" data-tab-content>
+      </div>
+    </div>
+    <ul class="grid07__tabs">
+      <li data-tab-target="#Container" class="active tab">Steven Trombley</li>
+      <li data-tab-target="#BOL" class="tab">Steph A. Brown</li>
+      <li data-tab-target="#BOL" class="tab">Joanna Smith</li>
+      <li data-tab-target="#BOL" class="tab">Jesse Cuevas</li>
+    </ul>
+    <button class="grid07__button">See all our team <img src="./assets/img/symbol_arrow_orange.png" alt=""></button>
+  </div>       
+  </div>
+</div>
+</div>
+
 </div>
 <!--grid info-->
 <div class="grid08">
@@ -410,13 +302,34 @@
         <input class="footer__mail" placeholder="Email" type="email">
         <img src="./assets/img/symbol_arrow_orange.png" alt="arrow-symbol" class="footer__img">
     </div>
-    <i class="fa-brands fa-google-plus-g"></i>
-    <i class="fa-brands fa-linkedin-in"></i>
-    <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-facebook-f"></i>
-    <small>APM Terminals © Copyright 2018 Legal Notice  |  Privacy</small>
+    <div class="footer__info">
+      <i class="fa-brands fa-google-plus-g"></i>
+      <i class="fa-brands fa-linkedin-in"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <div>
+        <small>APM Terminals © Copyright 2018 Legal Notice  |  Privacy</small>
+      </div>
+    </div>
 </div>
 </footer>
-<!-- <script src="./assets/js/index.js"></script> -->
+<script>
+  const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+</script>
 </body>
 </html>
