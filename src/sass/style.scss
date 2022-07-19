@@ -3,6 +3,9 @@
 @import 'mixins';
 @import 'typo';
 
+// *, *::before, *::after {
+//   box-sizing: border-box;
+// }
 
 body {
   height: 100%;
@@ -14,18 +17,12 @@ body {
   padding: 0;
 }
 
-// *, *::before, *::after {
-//   box-sizing: border-box;
-// }
-
 .fa-solid {
   margin-right: 5px;
-
 }
 
-// .fa-active::before, .fa-mortar-board:before {
-//   border: $icon-border solid 2px;
-//   border-radius: 50%;
-//   content: "\f19d";
-//   padding: 15px;
-// }
+.fa-circle-user::after, .fa-user-circle::after {
+  content: "";
+  padding-right: 9px;
+}
+

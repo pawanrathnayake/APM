@@ -2,14 +2,13 @@
 
 .navbar {
   align-items: center;
-  background-color: #ffffff;
-  box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
-  color: rgb(255, 255, 255);
+  background-color: $surface-color;
+  box-shadow: 0 2px 15px 0 $box-shadow;
   display: flex;
   justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 4;
 
     &__navbar-links ul {
       display: flex;
@@ -23,12 +22,12 @@
 
     &__navbar-links li a {
       display: inline-block;
-      padding: 1rem;
+      padding: 1.5rem;
       text-decoration: none;
     }
 
     &__navbar-links li:hover {
-      background-color: #8a8787;
+      background-color: $nav-background;
     }
 
     &__li {
@@ -61,8 +60,8 @@
     }
 
     &__input {
-      background-color: #fff;
-      box-shadow: 0 2px 15px 0 rgb(197 197 197 / 50%);
+      background-color: $surface-color;
+      box-shadow: 0 2px 15px 0 $box-shadow;
       border: transparent;
       height: 32px;
       margin: 23px 0 25px;
@@ -71,7 +70,7 @@
     }
 
     &__hint {
-      color: #776f65;
+      color: $hint-color;
       font-family: TradeGothic;
       font-size: 14px;
       font-weight: 300;
@@ -85,7 +84,7 @@
     }
 
     &__h4 {
-      color: #2f2f2f;
+      color: $h4-color;
       font-family: TradeGothic;
       font-size: 32px;
       font-weight: 300;
@@ -100,11 +99,11 @@
     }
 
     &__button {
-      background-color: #ff6319;
+      background-color: $button-primary;
       border: transparent;
       border-radius: 30px;
-      box-shadow: 0 2px 19px 0 rgba(189, 189, 189, 0.34);
-      color: #fff;
+      box-shadow: 0 2px 19px 0 $button-box-shadow;
+      color: $font-lite;
       display: inline-flex;
       font-family: ITCFranklinGothicStd-Med;
       font-size: 18px;
@@ -188,7 +187,7 @@
     }
 
     &__header {
-      color: #2f2f2f;
+      color: $header-color;
       font-family: TradeGothic;
       font-size: 28px;
       font-weight: 300;
@@ -210,7 +209,7 @@
     }
 
     &__p {
-      color: #2f2f2f;
+      color: $pra-color;
       height: 84px;
       margin: 28px 0 0;
       font-family: TradeGothic;
@@ -227,11 +226,11 @@
 
     &__btn {
       align-items: center;
-      background-color: #fff;
+      background-color: $button-background;
       border: transparent;
       border-radius: 30px;
-      box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
-      color: #ff6319;
+      box-shadow: 0 2px 15px 0 $box-shadow;
+      color: $button-primary;
       cursor: pointer;
       display: inline-flex;
       font-family: ITCFranklinGothicStd;
@@ -257,7 +256,7 @@
   padding: 104px 119px 10px 345px;
   
   &__h4 {
-    color: #2f2f2f;
+    color: $h4-color;
     font-stretch: normal;
     font-style: normal;
     font-family: TradeGothic;
@@ -280,7 +279,7 @@
   }
 
   &__paragraph {
-    color: #2f2f2f;
+    color: $pra-color;
     font-family: TradeGothic;
     font-size: 19px;
     font-weight: 300;
@@ -296,11 +295,11 @@
 
   &__button {
     align-items: center;
-    background-color: #fff;
+    background-color: $button-background;
     border: transparent;
     border-radius: 30px;
-    box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
-    color: #ff6319;
+    box-shadow: 0 2px 15px 0 $box-shadow;
+    color: $button-primary;
     cursor: pointer;
     display: inline-flex;
     font-family: ITCFranklinGothicStd;
@@ -319,7 +318,7 @@
   }
 
   &__header {
-    color: #2f2f2f;
+    color: $h4-color;
     font-family: TradeGothic;
     font-size: 40px;
     font-weight: 300;
@@ -343,11 +342,11 @@
 
   &__button {
     align-items: center;
-    background-color: #fff;
+    background-color: $button-background;
     border: transparent;
     border-radius: 30px;
-    box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
-    color: #ff6319;
+    box-shadow: 0 2px 15px 0 $box-shadow;
+    color: $button-primary;
     cursor: pointer;
     display: inline-flex;
     font-family: ITCFranklinGothicStd;
@@ -366,8 +365,8 @@
   }
 
   &__pa {
-    background-color: #004165;
-    color: #fff;
+    background-color: $menu-icon;
+    color: $surface-color;
     font-family: ITCFranklinGothicStd-Med;
     font-size: 16px;
     font-weight: normal;
@@ -380,7 +379,7 @@
   }
 
   &__details {
-    color: #2f2f2f;
+    color: $pra-color;
     font-family: TradeGothic;
     font-size: 19px;
     font-weight: 300;
@@ -390,6 +389,7 @@
     letter-spacing: normal;
     padding: 35px 45px 10px 40px;
     text-align: left;
+    margin-bottom: 46px;
   }
 }
 
@@ -401,7 +401,7 @@
     }
 
     &__header{
-      color: #393939;
+      color: $header-color;
       font-family: TradeGothic;
       font-size: 60px;
       font-weight: 300;
@@ -432,7 +432,7 @@
     }
 
     &__col02 table {
-      background-color: #fff;
+      background-color: $surface-color;
       padding: 0 40px 40px 261px;
       width: 100%;
     }
@@ -443,7 +443,7 @@
     }
 
     &__col02 td {
-      background-color: #f7f7f7;
+      background-color: $td-color;
       margin: 70px 0;
       opacity: 0.55;
       padding: 21px 51px 21px 79px;
@@ -452,11 +452,11 @@
 
     &__col04-button {
       align-items: center;
-      background-color: #fff;
+      background-color: $button-background;
       border: transparent;
       border-radius: 30px;
-      box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
-      color: #ff6319;
+      box-shadow: 0 2px 15px 0 $box-shadow;
+      color: $button-primary;
       cursor: pointer;
       display: inline-flex;
       font-family: ITCFranklinGothicStd;
@@ -483,7 +483,7 @@
   grid-gap: 53px;
   
     &__header {
-      color: #393939;
+      color: $header-color;
       font-family: TradeGothic;
       font-size: 60px;
       font-weight: 300;
@@ -517,7 +517,7 @@
     // }
 
     &__card h4 {
-      color: #2f2f2f;
+      color: $h4-color;
       font-family: TradeGothic;
       font-size: 28px;
       font-weight: 300;
@@ -534,7 +534,7 @@
     // }
 
     &__card p {
-      color: #2f2f2f;
+      color: $pra-color;
       font-family: TradeGothic;
       font-size: 19px;
       font-weight: 300;
@@ -550,11 +550,11 @@
 
     &__card button {
       align-items: center;
-      background-color: #fff;
+      background-color: $button-background;
       border: transparent;
       border-radius: 30px;
-      box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
-      color: #ff6319;
+      box-shadow: 0 2px 15px 0 $button-background;
+      color: $button-primary;
       cursor: pointer;
       display: inline-flex;
       font-family: ITCFranklinGothicStd;
@@ -604,7 +604,7 @@
     }
 
     &__card-header {
-      color: #393939;
+      color: $header-color;
       font-family: TradeGothic;
       font-size: 60px;
       font-weight: 300;
@@ -620,7 +620,7 @@
     }
 
     &__card p{
-      color: #2f2f2f;
+      color: $pra-color;
       font-family: TradeGothic;
       font-size: 19px;
       font-weight: 300;
@@ -636,11 +636,11 @@
 
     &__col02-button {
       align-items: center;
-      background-color: #fff;
+      background-color: $button-background;
       border: transparent;
       border-radius: 30px;
-      box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
-      color: #ff6319;
+      box-shadow: 0 2px 15px 0 $box-shadow;
+      color: $button-primary;
       cursor: pointer;
       display: inline-flex;
       font-family: ITCFranklinGothicStd;
@@ -666,7 +666,7 @@
   padding: 0 198px 139px 303px;
 
     &__tabs {
-      border-top:  solid 1px #979797;
+      border-top:  solid 1px $border-color;
       display: flex;
       justify-content: space-between;
       list-style-type: none;
@@ -676,11 +676,11 @@
 
     &__button {
       align-items: center;
-      background-color: #fff;
+      background-color: $button-background;
       border: transparent;
       border-radius: 30px;
-      box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
-      color: #ff6319;
+      box-shadow: 0 2px 15px 0 $box-shadow;
+      color: $button-primary;
       cursor: pointer;
       display: inline-flex;
       font-family: ITCFranklinGothicStd;
@@ -709,7 +709,7 @@
     }
 
     &__card p {
-      color: #2f2f2f;
+      color: $pra-color;
       font-size: 19px;
       font-weight: 300;
       font-stretch: normal;
@@ -724,7 +724,7 @@
     }
 
     &__card span {
-      color: #2f2f2f;
+      color: $pra-color;
       font-family: TradeGothic;
       font-size: 40px;
       font-weight: 300;
@@ -746,11 +746,11 @@
 
     &__card button {
       align-items: center;
-      background-color: #fff;
+      background-color: $button-background;
       border: transparent;
       border-radius: 30px;
-      box-shadow: 0 2px 15px 0 rgba(197, 197, 197, 0.5);
-      color: #ff6319;
+      box-shadow: 0 2px 15px 0 $box-shadow;
+      color: $button-primary;
       cursor: pointer;
       display: inline-flex;
       font-family: ITCFranklinGothicStd;
@@ -773,10 +773,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 172px 117px 23px 122px;
-  background-color: #f9f9f9;
+  background-color: $footer-color;
 
     &__col01 ul li {
-      color: #2f2f2f;
+      color: $list-color;
       font-family: TradeGothic;
       font-size: 18px;
       font-weight: 300;
@@ -790,13 +790,13 @@
     }
 
     &__col01 a {
-      color: orange;
+      color: $list-active;
       font-size: 18px;
       text-decoration: none;  
     }
 
     &__col02 ul li {
-      color: #2f2f2f;
+      color: $list-color;
       font-family: TradeGothic;
       font-size: 18px;
       font-weight: 300;
@@ -810,7 +810,7 @@
     }
 
     &__heading {
-      color: #2f2f2f;
+      color: $header-color;
       font-family: TradeGothic;
       font-size: 28px;
       font-weight: 300;
@@ -822,23 +822,21 @@
       text-align: left;
     }
     &__mail {
-      background-color: #fff;
+      background-color: $surface-color;
       border: none;
-      box-shadow: 0 2px 19px 0 rgba(189, 189, 189, 0.34);
+      box-shadow: 0 2px 19px 0 $button-box-shadow;
       padding: 14px 39px 16px 39px;
       position: relative;
       width: 400px;      
     }
 
     &__input {
-      --size: 60px;
-      border: 2px solid var(--clr-primary);
+      size: 60px;
       display: flex;
       // overflow: hidden;
       font-size: 1.25em;
       position: relative;
       margin-left: auto;
-      transition: width 450ms cubic-bezier(0.18, 0.89, 0.32, 1.28);
       padding: 3px;
     }
 
@@ -846,7 +844,7 @@
       background: transparent;
       border: 0;
       bottom: 0;
-      color: #2f2f2f;
+      color: $h4-color;
       cursor: pointer;
       flex-grow: 1;
       outline: 0;
@@ -881,7 +879,7 @@
 }
 
 .tabs {
-  border-bottom:  solid 1px #979797;
+  border-bottom:  solid 1px $tab-color;
   display: flex;
   justify-content: space-between;
   list-style-type: none;
@@ -890,7 +888,7 @@
 }
   
 .tab {
-  color: #004165;
+  color: $menu-icon;
   cursor: pointer;
   // width: 147px;
   // height: 42px;
@@ -930,13 +928,12 @@
   transition: transform ease var(--animation-time, 200ms), opacity ease 0ms 200ms;
   width: 176px;
 }
-
 .profile{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
   &__header {
-    color: #393939;
+    color: $header-color;
     font-family: TradeGothic;
     font-size: 60px;
     font-weight: 300;
@@ -949,7 +946,7 @@
   }
 
   &__name {
-    color: #004165;
+    color: $menu-icon;
     font-family: TradeGothic;
     font-size: 40px;
     font-weight: 300;
@@ -961,7 +958,7 @@
   }
 
   &__des {
-    color: #2f2f2f;
+    color: $pra-color;
     font-family: TradeGothic;
     font-size: 19px;
     font-weight: 300;
